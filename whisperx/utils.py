@@ -214,9 +214,9 @@ def write_ass(transcript: Iterator[dict],
 
     file.write(ass_str)
 
-
-from whisper.utils import ResultWriter, WriteTXT, WriteVTT, WriteSRT, WriteTSV, WriteJSON, format_timestamp
-from whisper.utils import get_writer, write_result, iterate_result
+from whisper.utils import *
+# from whisper.utils import WriteTXT, WriteVTT, WriteSRT, WriteTSV, WriteJSON, format_timestamp
+# from whisper.utils import get_writer, write_result, iterate_result
 
 class WriteASS(ResultWriter):
     extension: str = "ass"
